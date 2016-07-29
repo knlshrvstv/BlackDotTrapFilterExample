@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spotTheBlackDot" translatesAutoresizingMaskIntoConstraints="NO" id="Y7L-cW-3bJ">
+                                <rect key="frame" x="63" y="66" width="248" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="4Ux-j6-Dub"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spotTheBlackDot" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-kZ-XNr">
+                                <rect key="frame" x="63" y="327" width="248" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="tM5-jE-aNA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y7L-cW-3bJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2t3-MZ-xNN"/>
+                            <constraint firstItem="Y7L-cW-3bJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="7d9-1O-yDR"/>
+                            <constraint firstItem="gNg-kZ-XNr" firstAttribute="leading" secondItem="Y7L-cW-3bJ" secondAttribute="leading" id="DKo-BC-vam"/>
+                            <constraint firstItem="gNg-kZ-XNr" firstAttribute="top" secondItem="Y7L-cW-3bJ" secondAttribute="bottom" constant="63" id="PV4-94-5EL"/>
+                            <constraint firstItem="gNg-kZ-XNr" firstAttribute="centerX" secondItem="Y7L-cW-3bJ" secondAttribute="centerX" id="agf-L7-Y5w"/>
+                            <constraint firstItem="Y7L-cW-3bJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="47" id="z8V-ae-foX"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="originalImageView" destination="Y7L-cW-3bJ" id="j96-ia-qy5"/>
+                        <outlet property="postFilterImageView" destination="gNg-kZ-XNr" id="hdl-MT-29M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277.5" y="428.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="spotTheBlackDot" width="359" height="269"/>
+    </resources>
+</document>
